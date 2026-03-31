@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences - Alexandre Tricot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Alexandre <span class="gradient-text">Tricot</span></div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="competences.html" class="active">Compétences</a>
+                <a href="culture.html">Culture</a>
+                <a href="stage.html">Stage</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="text-center py-4">
+            <h1 class="section-title">Mon Portefeuille de <span class="gradient-text">Compétences</span></h1>
+            <p class="text-muted max-w-700 mx-auto">
+                Une analyse approfondie de mon parcours en BUT Informatique. Retrouvez l'évaluation détaillée de mes
+                acquis par année.
+            </p>
+        </div>
+
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchYear('but1', event)">Année 1 (BUT 1)</button>
+            <button class="tab-btn" onclick="switchYear('but2', event)">Année 2 (BUT 2)</button>
+        </div>
+
+        <!-- ======================================================= -->
+        <!--                      BUT 1                              -->
+        <!-- ======================================================= -->
+        <div id="but1" class="year-content active">
+
+            <!-- C1: Réaliser -->
+            <div class="competence-block">
+                <div class="comp-header">
+                    <div class="comp-icon">💻</div>
+                    <div>
+                        <h2>C1 : Réaliser un développement d'application</h2>
+                        <p class="text-muted">Bases de la programmation, Conception, Tests</p>
+                    </div>
+                </div>
+                <div class="comp-content">
+                    <table class="criteria-table">
+                        <thead>
+                            <tr>
+                                <th>Critères</th>
+                                <th>Non Acquis</th>
+                                <th>En Cours</th>
+                                <th>Acquis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-critere">AC 1 : Implémenter des conceptions simples</td>
+                                <td class="col-non-acquis">Erreurs d'exécution, absence de commentaires et
+                                    d’indentation, nommage peu représentatif, boucles infinies, objectifs non atteints.
+                                </td>
+                                <td class="col-en-cours">Présence de boucles ou instructions inutiles, variables non
+                                    utilisées, structure de code perfectible, langage mal adapté.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Code fonctionnel, commenté, bien structuré, avec bonne vitesse d’exécution et
+                                    consommation de ressources maîtrisée.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 2 : Élaborer des conceptions simples</td>
+                                <td class="col-non-acquis">Compréhension incomplète des besoins et contraintes,
+                                    difficultés avec les diagrammes, conception partiellement fonctionnelle.</td>
+                                <td class="col-en-cours">Besoin compris mais modélisation peu claire ou difficile à
+                                    lire, informations incomplètes recueillies auprès du client.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Analyse complète des besoins et contraintes, modélisation claire (schémas, UML) et
+                                    choix de conception expliqués.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 3 : Faire des essais et évaluer les résultats</td>
+                                <td class="col-non-acquis">Tests non reliés aux spécifications, pas de comparaison
+                                    résultats obtenus/attendus, écarts non expliqués.</td>
+                                <td class="col-en-cours">Tests partiels, problèmes fonctionnels identifiés mais
+                                    comportements imprévus restants, exigences techniques mal couvertes.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Tests construits à partir des spécifications, écarts compris et corrigés, résultats
+                                    présentés de manière claire.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 4 : Développer des interfaces utilisateurs</td>
+                                <td class="col-non-acquis">Navigation incomplète, boutons non fonctionnels, intitulés
+                                    inadaptés, charte graphique non respectée, application instable.</td>
+                                <td class="col-en-cours">
+                                    Interface utilisable mais peu intuitive, guidage limité, menus trop imbriqués,
+                                    feedbacks peu clairs.
+                                </td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Interface claire, ergonomique, navigable par un utilisateur externe, charte
+                                    graphique lisible et critères d’ergonomie respectés.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="self-eval-container">
+                        <div class="self-eval-title">🔍 Projets & Contexte</div>
+                        <p><strong>Application Morpion :</strong> Ce TP de développement d’une application Morpion avec
+                            JavaFX a été particulièrement enrichissant et motivant. Travailler en autonomie sur un
+                            projet concret et interactif m’a permis de mettre en pratique mes compétences en
+                            programmation orientée objet et en interface graphique. C’était à la fois amusant et
+                            formateur.</p>
+                        <p class="mt-1"><strong>TDD Potterbook :</strong> Le projet PotterBook m’a permis de
+                            maîtriser le TDD en Java en développant un code fiable et structuré. Écrire les tests avant
+                            le code m’a aidé à mieux comprendre les règles métier et à assurer la qualité dès le départ.
+                        </p>
+                    </div>
+
+                    <div class="traces-gallery">
+                        <div class="trace-item"><img src="images/capture-morpion-ihm.jpg" alt="Morpion IHM">
+                            <div class="trace-caption">Morpion JavaFX</div>
+                        </div>
+                        <div class="trace-item"><img src="images/capture-potterbook-tests.png" alt="Tests TDD">
+                            <div class="trace-caption">Tests PotterBook</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C2: Optimiser -->
+            <div class="competence-block">
+                <div class="comp-header">
+                    <div class="comp-icon">🚀</div>
+                    <div>
+                        <h2>C2 : Optimiser des applications</h2>
+                        <p class="text-muted">Algorithmique, Complexité, Maths</p>
+                    </div>
+                </div>
+                <div class="comp-content">
+                    <table class="criteria-table">
+                        <thead>
+                            <tr>
+                                <th>Critères</th>
+                                <th>Non Acquis</th>
+                                <th>En Cours</th>
+                                <th>Acquis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-critere">AC 1 : Analyser un problème avec méthode</td>
+                                <td class="col-non-acquis">Utilisation insuffisante des concepts algorithmiques, absence
+                                    de décomposition claire du problème.</td>
+                                <td class="col-en-cours">Problème identifié mais analyse incomplète ou imprécise sur
+                                    certaines parties.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Identification précise des éléments clés, choix de structures de données et
+                                    d’algorithmes adaptés.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 2 : Comparer des algorithmes classiques</td>
+                                <td class="col-non-acquis">Aucun algorithme réellement testé, résultats incohérents,
+                                    absence de critères de comparaison.</td>
+                                <td class="col-en-cours">Critères de comparaison mal définis ou peu exploités, analyse
+                                    superficielle.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Justification sur des critères mesurables, tests cohérents, complexité et
+                                    performances documentées.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 3 : Formaliser et mettre en œuvre des outils mathématiques
+                                </td>
+                                <td class="col-non-acquis">Outils mathématiques mal choisis ou mal appliqués, erreurs de
+                                    calcul fréquentes.</td>
+                                <td class="col-en-cours active-level-progress">
+                                    <span class="level-badge badge-encours">En Cours</span><br>
+                                    Démarche partielle, étapes peu détaillées, présentation perfectible.
+                                </td>
+                                <td class="col-acquis">Outils utilisés à bon escient, formalisation précise et résultats
+                                    validés par des tests.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="self-eval-container">
+                        <div class="self-eval-title">🔍 Projets & Contexte</div>
+                        <p><strong>SAE 2.02 – Exploration algorithmique :</strong> Ce projet en Java m’a permis
+                            d’approfondir mes connaissances en algorithmique, notamment à travers l’implémentation des
+                            algorithmes de parcours de graphe comme DFS, BFS et A*. En les comparant, j’ai mieux compris
+                            leurs avantages et limites.</p>
+                        <p class="mt-1"><strong>TP Porte-monnaie :</strong> Ce TP m’a initié à une approche
+                            rigoureuse (TDD). En écrivant d’abord les tests avant le code, j’ai appris à mieux définir
+                            les attentes fonctionnelles et à concevoir des méthodes plus simples.</p>
+                    </div>
+
+                    <div class="traces-gallery">
+                        <div class="trace-item"><img src="images/prog.jpg" alt="Algo">
+                            <div class="trace-caption">Exploration Algo</div>
+                        </div>
+                        <div class="trace-item"><img src="images/capture-portemonnaie-tests.png" alt="Tests Perf">
+                            <div class="trace-caption">Optimisation Code</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C3: Admin -->
+            <div class="competence-block">
+                <div class="comp-header">
+                    <div class="comp-icon">⚙️</div>
+                    <div>
+                        <h2>C3 : Administrer des systèmes</h2>
+                        <p class="text-muted">Système, Réseau, Linux</p>
+                    </div>
+                </div>
+                <div class="comp-content">
+                    <table class="criteria-table">
+                        <thead>
+                            <tr>
+                                <th>Critères</th>
+                                <th>Non Acquis</th>
+                                <th>En Cours</th>
+                                <th>Acquis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-critere">AC 1 : Identifier les composants</td>
+                                <td class="col-non-acquis">Compréhension limitée de l’utilité des composants, confusions
+                                    fréquentes.</td>
+                                <td class="col-en-cours">Connaissance des composants principaux (CPU, ALU, RAM…).</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Maîtrise de l’utilité de chaque composant et capacité à les situer dans une machine.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 2 : Utiliser un système multitâches/multi-utilisateurs</td>
+                                <td class="col-non-acquis">Difficultés à exécuter des tâches simples, incompréhension
+                                    des notions de multitâche et multi-utilisateurs.</td>
+                                <td class="col-en-cours">Gestion basique des tâches, groupes et utilisateurs.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Utilisation avancée des processus (tâches en fond, récupération des informations,
+                                    gestion des signaux).
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 3 : Installer et configurer un OS et des outils</td>
+                                <td class="col-non-acquis">Difficulté à installer un système ou à rédiger un guide
+                                    d’installation.</td>
+                                <td class="col-en-cours">Installation fonctionnelle du système, configuration partielle
+                                    des comptes et applications.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Usage du terminal, configuration d’applications avancées et personnalisation du
+                                    système.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 4 : Configurer un poste dans un réseau d’entreprise</td>
+                                <td class="col-non-acquis">Difficulté à schématiser les rôles et permissions selon les
+                                    utilisateurs.</td>
+                                <td class="col-en-cours active-level-progress">
+                                    <span class="level-badge badge-encours">En Cours</span><br>
+                                    Création de rôles et permissions avec quelques erreurs.
+                                </td>
+                                <td class="col-acquis">Configuration cohérente des rôles et des droits dans un contexte
+                                    d’entreprise.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="self-eval-container">
+                        <div class="self-eval-title">🔍 Projets & Contexte</div>
+                        <p><strong>SAE 2.03 – Services réseau :</strong> Ce projet m’a permis de configurer des services
+                            réseau sur Linux en utilisant la ligne de commande. J’ai appris à installer, sécuriser et
+                            tester différents services (Web, DNS).</p>
+                        <p class="mt-1"><strong>R2.05 – TP2 :</strong> J’ai configuré un poste de travail au
+                            sein d’un réseau existant, en gérant les utilisateurs, les groupes et les droits d’accès.
+                        </p>
+                    </div>
+
+                    <div class="traces-gallery">
+                        <!-- Image "config reseau" retirée comme demandé -->
+                        <div class="trace-item"><img src="images/capture-r205-tp2.jpg" alt="Reseau TP">
+                            <div class="trace-caption">Administration Poste</div>
+                        </div>
+                        <div class="trace-item"><img src="images/capture-choosing-desktop.jpg" alt="Hardware">
+                            <div class="trace-caption">Choix Matériel</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C4: Données -->
+            <div class="competence-block">
+                <div class="comp-header">
+                    <div class="comp-icon">🗄️</div>
+                    <div>
+                        <h2>C4 : Gérer des données</h2>
+                        <p class="text-muted">SQL, BDD, Modélisation</p>
+                    </div>
+                </div>
+                <div class="comp-content">
+                    <table class="criteria-table">
+                        <thead>
+                            <tr>
+                                <th>Critères</th>
+                                <th>Non Acquis</th>
+                                <th>En Cours</th>
+                                <th>Acquis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-critere">AC 1 : Mettre à jour et interroger une base de données
+                                    relationnelle</td>
+                                <td class="col-non-acquis">Difficultés à utiliser les requêtes appropriées ou à se
+                                    repérer dans l’interface SQL.</td>
+                                <td class="col-en-cours">Requêtes fonctionnelles mais parfois trop complexes ou limitées
+                                    à la mise à jour.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Requêtes concises, intégrant les contraintes (clés étrangères…), avec bonne
+                                    compréhension de la structure.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 2 : Visualiser des données</td>
+                                <td class="col-non-acquis">La représentation choisie ne met pas en valeur les
+                                    informations importantes, la lecture des résultats reste difficile.</td>
+                                <td class="col-en-cours">Les données sont représentées de façon globalement lisible,
+                                    même si certains choix de visualisation ne sont pas pleinement adaptés.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Les visualisations sont choisies et construites pour éclairer clairement les
+                                    indicateurs pertinents et faciliter l’interprétation.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 3 : Concevoir une base de données relationnelle à partir d’un
+                                    cahier des charges</td>
+                                <td class="col-non-acquis">La structure proposée ne reflète pas bien les besoins, avec
+                                    des redondances ou des oublis majeurs.</td>
+                                <td class="col-en-cours">
+                                    Le modèle couvre l’essentiel du besoin, mais comporte encore des incohérences ou des
+                                    choix de modélisation discutables.
+                                </td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Le schéma relationnel traduit de manière organisée le cahier des charges, en
+                                    limitant les redondances et en respectant les contraintes clés.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="self-eval-container">
+                        <div class="self-eval-title">🔍 Projets & Contexte</div>
+                        <p><strong>R2.06 – JavaFX et BDD :</strong> Dans ce projet, j’ai conçu une interface graphique
+                            connectée à une base de données relationnelle. J’ai travaillé sur les requêtes SQL, les
+                            jointures et la mise à jour des données depuis l’application.</p>
+                    </div>
+
+                    <div class="traces-gallery">
+                        <div class="trace-item"><img src="images/capture-javafx-bdd.png" alt="JavaFX BDD">
+                            <div class="trace-caption">Appli connectée BDD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C5: Projet -->
+            <div class="competence-block">
+                <div class="comp-header">
+                    <div class="comp-icon">📅</div>
+                    <div>
+                        <h2>C5 : Conduire un projet</h2>
+                        <p class="text-muted">Besoins, Outils, Acteurs</p>
+                    </div>
+                </div>
+                <div class="comp-content">
+                    <table class="criteria-table">
+                        <thead>
+                            <tr>
+                                <th>Critères</th>
+                                <th>Non Acquis</th>
+                                <th>En Cours</th>
+                                <th>Acquis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-critere">AC 1 : Appréhender les besoins du client et de l’utilisateur
+                                </td>
+                                <td class="col-non-acquis">Le besoin est pris en compte de façon très partielle ;
+                                    certains enjeux ou contraintes importants ne sont pas identifiés.</td>
+                                <td class="col-en-cours">Les attentes principales sont comprises et reformulées, mais
+                                    certains aspects restent flous ou insuffisamment discutés.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Les besoins sont clarifiés avec le client et les utilisateurs, reformulés et
+                                    priorisés pour guider concrètement le projet.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 2 : Mettre en place les outils de gestion de projet</td>
+                                <td class="col-non-acquis">Les outils sont peu ou pas utilisés ; le suivi de
+                                    l’avancement reste informel et difficile à retracer.</td>
+                                <td class="col-en-cours active-level-progress">
+                                    <span class="level-badge badge-encours">En Cours</span><br>
+                                    Quelques outils sont mis en œuvre (planning, suivi des tâches, partage de
+                                    documents), mais leur usage n’est pas encore régulier.
+                                </td>
+                                <td class="col-acquis">Les outils choisis sont adaptés au projet et alimentés tout au
+                                    long du déroulement, permettant un suivi clair de l’avancement.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 3 : Travailler l’ergonomie et la satisfaction client</td>
+                                <td class="col-non-acquis">Règles d’ergonomie peu respectées, charte graphique confuse,
+                                    messages flous.</td>
+                                <td class="col-en-cours">Ergonomie minimale, charte graphique compréhensible mais
+                                    perfectible.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Production ergonomique, charte graphique réfléchie et communication fluide.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 4 : Identifier les acteurs et phases d’un cycle de
+                                    développement</td>
+                                <td class="col-non-acquis">Difficulté à identifier les acteurs impliqués dans le projet.
+                                </td>
+                                <td class="col-en-cours">Répartition et rôles encore flous.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Analyse des forces/faiblesses de l’équipe et répartition des tâches adaptée.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 5 : Développer la solution numérique</td>
+                                <td class="col-non-acquis">Tests peu liés aux besoins, résultats non expliqués.</td>
+                                <td class="col-en-cours">Tests présents mais avec des comportements imprévus restants.
+                                </td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Tests alignés avec les spécifications, corrections appliquées et résultats
+                                    explicités.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="self-eval-container">
+                        <div class="self-eval-title">🔍 Projets & Contexte</div>
+                        <p><strong>TP JavaFX – Projet Morpion :</strong> Ce projet m’a permis de conduire un mini-cycle
+                            de développement complet : analyse du besoin, conception, implémentation et tests, en
+                            prenant en compte l'ergonomie.</p>
+                        <p class="mt-1"><strong>SAE 2.03 – Gestion de projet :</strong> J’ai travaillé à la
+                            fois sur la planification (PERT, GANTT) et sur la mise en place technique, reliant ainsi la
+                            gestion théorique à la pratique.</p>
+                    </div>
+
+                    <div class="traces-gallery">
+                        <div class="trace-item"><img src="images/capture-morpion-projet.jpg" alt="Projet Morpion">
+                            <div class="trace-caption">Gestion Projet Morpion</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C6: Collaborer -->
+            <div class="competence-block">
+                <div class="comp-header">
+                    <div class="comp-icon">🤝</div>
+                    <div>
+                        <h2>C6 : Collaborer</h2>
+                        <p class="text-muted">Équipe, Communication, Rôles</p>
+                    </div>
+                </div>
+                <div class="comp-content">
+                    <table class="criteria-table">
+                        <thead>
+                            <tr>
+                                <th>Critères</th>
+                                <th>Non Acquis</th>
+                                <th>En Cours</th>
+                                <th>Acquis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-critere">AC1 : Comprendre l’écosystème numérique</td>
+                                <td class="col-non-acquis">Difficultés à comprendre le fonctionnement de l’écosystème et
+                                    à s’intégrer dans une équipe.</td>
+                                <td class="col-en-cours">
+                                    Identification progressive des interactions, adaptation encore en cours.
+                                </td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Compréhension claire des interactions et collaboration efficace avec l’équipe.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC2 : Identifier les compétences requises</td>
+                                <td class="col-non-acquis">Difficulté à distinguer les secteurs de l’informatique.</td>
+                                <td class="col-en-cours">Connaissance de certaines compétences sans application
+                                    systématique.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Maîtrise de la communication en équipe et compréhension des secteurs de
+                                    l’informatique.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC3 : Statuts, fonctions et rôles</td>
+                                <td class="col-non-acquis">Méconnaissance des statuts et de l’utilité des différents
+                                    rôles.</td>
+                                <td class="col-en-cours">Idée générale des responsabilités mais implications encore
+                                    floues.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Identification précise des rôles et de leur complémentarité.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC4 : Compétences interpersonnelles</td>
+                                <td class="col-non-acquis">Travail en isolement, peu d’interactions avec l’équipe.</td>
+                                <td class="col-en-cours">Communication présente mais responsabilités parfois mal
+                                    assumées.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Écoute active, respect des directives et bonne intégration dans l’équipe.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="self-eval-container">
+                        <div class="self-eval-title">🔍 Projets & Contexte</div>
+                        <p><strong>R1.11 – Bases de la communication :</strong> J'ai réalisé des affiches en groupe pour
+                            faire passer des messages, ce module m’a aidé à mieux comprendre le
+                            rôle de la communication dans les projets informatiques.</p>
+                    </div>
+
+                    <div class="traces-gallery">
+                        <div class="trace-item"><img src="images/capture-communication.png" alt="Comms">
+                            <div class="trace-caption">Travail d'équipe</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin BUT 1 -->
+
+
+        <!-- ======================================================= -->
+        <!--                      BUT 2                              -->
+        <!-- ======================================================= -->
+        <div id="but2" class="year-content">
+
+            <!-- C1: Réaliser -->
+            <div class="competence-block">
+                <div class="comp-header">
+                    <div class="comp-icon">🏗️</div>
+                    <div>
+                        <h2>C1 : Réaliser un développement d’application</h2>
+                        <p class="text-muted">Spécifications, Ergonomie, Conception, Tests</p>
+                    </div>
+                </div>
+                <div class="comp-content">
+                    <table class="criteria-table">
+                        <thead>
+                            <tr>
+                                <th>Critères</th>
+                                <th>Non Acquis</th>
+                                <th>En Cours</th>
+                                <th>Acquis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-critere">AC1 : Spécifications fonctionnelles</td>
+                                <td class="col-non-acquis">Les exigences sont peu exploitées : nombreuses zones non
+                                    analysées, critères oubliés ou mal compris, l’application livrée s’éloigne fortement
+                                    de la demande.</td>
+                                <td class="col-en-cours active-level-progress">
+                                    <span class="level-badge badge-encours">En Cours</span><br>
+                                    Les exigences principales sont identifiées et traitées, mais certains détails ou
+                                    contraintes (performance, sécurité) sont négligés.
+                                </td>
+                                <td class="col-acquis">Les exigences sont analysées, reformulées si besoin et organisées
+                                    ; l’application livrée répond clairement aux fonctionnalités attendues.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC2 : Accessibilité & Ergonomie</td>
+                                <td class="col-non-acquis">L’interface gêne l’utilisation : repères visuels
+                                    insuffisants, navigation confuse, obstacles importants pour certains publics.</td>
+                                <td class="col-en-cours">L’interface permet de réaliser les tâches, mais certains choix
+                                    (placement, lisibilité) compliquent l’expérience d’une partie des utilisateurs.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    L’interface facilite le parcours : organisation claire, repères visuels cohérents,
+                                    prise en compte de différents profils d’utilisateurs.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC3 : Bonnes pratiques</td>
+                                <td class="col-non-acquis">La conception est peu formalisée, les responsabilités sont
+                                    mélangées, le code est difficile à comprendre ou à faire évoluer.</td>
+                                <td class="col-en-cours">Une structure de conception existe (schémas, séparation
+                                    partielle), le code est globalement organisé mais comporte encore des zones peu
+                                    claires.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    La conception est argumentée (choix des structures, couches, patterns) et le code
+                                    est structuré, lisible, factorisé et prêt à être maintenu.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC4 : Qualité par les tests</td>
+                                <td class="col-non-acquis">Les tests sont absents ou improvisés, la détection d’erreurs
+                                    repose surtout sur l’utilisation ponctuelle de l’application.</td>
+                                <td class="col-en-cours">Des tests ciblent les cas d’usage principaux, mais certains
+                                    scénarios ou limites ne sont pas explorés, laissant subsister des défauts.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Les tests sont pensés dès la conception, couvrent les cas usuels et critiques, et
+                                    sont exploités pour corriger les anomalies.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="self-eval-container">
+                        <div class="self-eval-title">🔍 Mon Auto-évaluation (BUT 2)</div>
+                        <p>En deuxième année, j'ai franchi un cap : je ne code plus "pour que ça marche", mais "pour que
+                            ce soit maintenable". L'accent mis sur les spécifications et l'architecture logicielle me
+                            permet de produire des applications professionnelles. Je veille désormais systématiquement à
+                            la lisibilité de mon code pour mes collaborateurs.</p>
+
+                        <div class="self-eval-title mt-1-5">🔍 Projets & Contexte</div>
+                        <p><strong>Projet Musicode :</strong> Conception et développement complet d'un site web musical
+                            avec une base de données PHP. Ce projet m'a appris à respecter des contraintes techniques
+                            strictes tout en assurant une architecture robuste.</p>
+                    </div>
+
+                    <div class="traces-gallery">
+                        <div class="trace-item"><img src="images/musicode.png" alt="Musicode">
+                            <div class="trace-caption">Site Musicode PHP</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C2: Optimiser -->
+            <div class="competence-block">
+                <div class="comp-header">
+                    <div class="comp-icon">⚡</div>
+                    <div>
+                        <h2>C2 : Optimiser des applications</h2>
+                        <p class="text-muted">Structures complexes, Sécurité, Eco-conception</p>
+                    </div>
+                </div>
+                <div class="comp-content">
+                    <table class="criteria-table">
+                        <thead>
+                            <tr>
+                                <th>Critères</th>
+                                <th>Non Acquis</th>
+                                <th>En Cours</th>
+                                <th>Acquis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-critere">AC1 : Structures de données complexes</td>
+                                <td class="col-non-acquis">Le même type de structure est utilisé quel que soit le
+                                    contexte ; l’impact sur les performances ou la clarté n’est pas pris en compte.</td>
+                                <td class="col-en-cours">Différentes structures sont envisagées et parfois choisies à
+                                    bon escient, mais sans analyse systématique de leurs avantages et limites.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Les structures de données sont choisies en fonction du problème, avec une
+                                    justification liée au coût, à la lisibilité et aux besoins d’évolution.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC2 : Algorithmique avancée</td>
+                                <td class="col-non-acquis">Les solutions proposées restent très simples, ignorent la
+                                    taille des données ou la nature du problème.</td>
+                                <td class="col-en-cours active-level-progress">
+                                    <span class="level-badge badge-encours">En Cours</span><br>
+                                    Certaines techniques plus évoluées sont mobilisées, mais la méthode retenue n’est
+                                    pas toujours complètement ajustée au problème posé.
+                                </td>
+                                <td class="col-acquis">Des méthodes algorithmiques adaptées sont identifiées et
+                                    appliquées, en tenant compte de la complexité, de la précision et des contraintes.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC3 : Sécurisation</td>
+                                <td class="col-non-acquis">Les risques de sécurité sont peu identifiés, des pratiques
+                                    fragiles subsistent (exposition de données, contrôles insuffisants).</td>
+                                <td class="col-en-cours">Les principaux risques sont repérés et quelques mécanismes de
+                                    protection sont mis en œuvre, parfois de manière partielle.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Les enjeux de sécurité sont pris en compte dès la conception ; des protections
+                                    adaptées sont choisies et intégrées pour limiter les vulnérabilités.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC4 : Impact env. & sociétal</td>
+                                <td class="col-non-acquis">Les conséquences sur les ressources, les usages ou les
+                                    personnes ne sont pas vraiment interrogées lors des choix techniques.</td>
+                                <td class="col-en-cours">Certains effets (consommation, acceptabilité, usages) sont
+                                    repérés, mais ils ne sont pas toujours pris en compte au moment de décider.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Les choix techniques sont examinés au regard de leurs effets sur l’environnement et
+                                    les utilisateurs, ce qui oriente la solution retenue.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="self-eval-container">
+                        <div class="self-eval-title">🔍 Mon Auto-évaluation (BUT 2)</div>
+                        <p>J'ai développé une conscience de la "qualité globale". Optimiser ne veut plus dire seulement
+                            aller vite, mais aussi consommer moins (éco-conception) et être sûr (sécurité by design). Je
+                            m'efforce de choisir la structure de données la plus pertinente pour chaque cas d'usage.</p>
+
+                        <div class="self-eval-title mt-1-5">🔍 Projets & Contexte</div>
+                        <p><strong>Architecture MVC :</strong> Mise en œuvre du pattern Modèle-Vue-Contrôleur pour
+                            structurer proprement le code de mes applications web.</p>
+                        <p class="mt-1"><strong>TP Canards (Design Patterns) :</strong> Exercice pratique en
+                            Java sur l'utilisation des Design Patterns pour rendre le code orienté
+                            objet plus modulaire et évolutif.</p>
+                    </div>
+
+                    <div class="traces-gallery">
+                        <div class="trace-item"><img src="images/mcv.png" alt="MVC">
+                            <div class="trace-caption">Modèle MVC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C3: Admin -->
+            <div class="competence-block">
+                <div class="comp-header">
+                    <div class="comp-icon">🛡️</div>
+                    <div>
+                        <h2>C3 : Administrer des systèmes complexes</h2>
+                        <p class="text-muted">Composants, Multitâches, Réseau</p>
+                    </div>
+                </div>
+                <div class="comp-content">
+                    <table class="criteria-table">
+                        <thead>
+                            <tr>
+                                <th>Critères</th>
+                                <th>Non Acquis</th>
+                                <th>En Cours</th>
+                                <th>Acquis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-critere">AC1 : Identifier les composants</td>
+                                <td class="col-non-acquis">La distinction entre composants matériels, logiciels et
+                                    services réseau reste floue, les rôles sont difficilement expliqués.</td>
+                                <td class="col-en-cours">Les principaux éléments sont reconnus et globalement associés à
+                                    leur fonction, avec encore quelques zones d’ombre.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Les différentes briques (composants physiques, OS, services, réseaux) sont
+                                    identifiées et situées dans l’architecture globale du système.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC2 : Système multitâches</td>
+                                <td class="col-non-acquis">Les actions restent limitées aux usages les plus simples ; la
+                                    gestion des processus, des utilisateurs ou des droits est peu maîtrisée.</td>
+                                <td class="col-en-cours active-level-progress">
+                                    <span class="level-badge badge-encours">En Cours</span><br>
+                                    Les fonctionnalités principales sont utilisées (installation, gestion de fichiers),
+                                    avec parfois des erreurs ou des hésitations.
+                                </td>
+                                <td class="col-acquis">Le système est utilisé de manière structurée : gestion des
+                                    comptes, des droits, des processus et des ressources en cohérence avec le contexte.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC3 : Installation & Config</td>
+                                <td class="col-non-acquis">L’installation ou la configuration échoue souvent ou
+                                    nécessite une assistance constante ; la compréhension des étapes reste faible.</td>
+                                <td class="col-en-cours">L’installation est menée à son terme avec quelques ajustements
+                                    guidés ; une partie des outils est correctement configurée.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Le système et les outils de développement sont installés, paramétrés et vérifiés de
+                                    manière autonome, en tenant compte de la besoins du projet.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC4 : Réseau entreprise</td>
+                                <td class="col-non-acquis">Le poste ne s’intègre pas correctement au réseau (adresse,
+                                    services, sécurité) et les paramètres sont peu maîtrisés.</td>
+                                <td class="col-en-cours">Le poste peut rejoindre le réseau et utiliser les services
+                                    essentiels, même si certains réglages restent approximatifs.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    La configuration permet une intégration cohérente au réseau (adresses, services,
+                                    politiques de sécurité) en lien avec les règles de l’organisation.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="self-eval-container">
+                        <div class="self-eval-title">🔍 Mon Auto-évaluation (BUT 2)</div>
+                        <p>Je suis capable de gérer un parc informatique complexe. L'administration système n'est plus
+                            un mystère : je sais installer, configurer et sécuriser des postes dans un environnement
+                            d'entreprise exigeant, en comprenant parfaitement ce qui se passe sous le capot.</p>
+
+                        <div class="self-eval-title mt-1-5">🔍 Projets & Contexte</div>
+                        <p><strong>Sécurisation Serveur (Iptables) :</strong> TP complet de conception d'un serveur web
+                            sécurisé. J'ai mis en place des restrictions d'accès précises et configuré le pare-feu
+                            Iptables pour protéger l'infrastructure.</p>
+                    </div>
+
+                    <div class="traces-gallery">
+                        <div class="trace-item"><img src="images/iptables.png" alt="Iptables">
+                            <div class="trace-caption">Config Iptables</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C4: Données -->
+            <div class="competence-block">
+                <div class="comp-header">
+                    <div class="comp-icon">🗄️</div>
+                    <div>
+                        <h2>C4 : Gérer des données</h2>
+                        <p class="text-muted">Requêtes, Visualisation, Conception BDD</p>
+                    </div>
+                </div>
+                <div class="comp-content">
+                    <table class="criteria-table">
+                        <thead>
+                            <tr>
+                                <th>Critères</th>
+                                <th>Non Acquis</th>
+                                <th>En Cours</th>
+                                <th>Acquis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-critere">AC 1 : Mettre à jour et interroger une base de données
+                                    relationnelle</td>
+                                <td class="col-non-acquis">Les requêtes produisent des résultats erronés ou incomplets,
+                                    les opérations de mise à jour sont hésitantes ou risquées.</td>
+                                <td class="col-en-cours">Les requêtes couvrent les principaux besoins, mais certaines
+                                    manipulations (jointures, conditions, mises à jour) restent fragiles.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Requêtes concises, intégrant les contraintes (clés étrangères…), avec bonne
+                                    compréhension de la structure.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 2 : Visualiser des données</td>
+                                <td class="col-non-acquis">La représentation choisie ne met pas en valeur les
+                                    informations importantes, la lecture des résultats reste difficile.</td>
+                                <td class="col-en-cours">Les données sont représentées de façon globalement lisible,
+                                    même si certains choix de visualisation ne sont pas pleinement adaptés.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Les visualisations sont choisies et construites pour éclairer clairement les
+                                    indicateurs pertinents et faciliter l’interprétation.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 3 : Concevoir une base de données relationnelle à partir d’un
+                                    cahier des charges</td>
+                                <td class="col-non-acquis">La structure proposée ne reflète pas bien les besoins, avec
+                                    des redondances ou des oublis majeurs.</td>
+                                <td class="col-en-cours active-level-progress">
+                                    <span class="level-badge badge-encours">En Cours</span><br>
+                                    Le modèle couvre l’essentiel du besoin, mais comporte encore des incohérences ou des
+                                    choix de modélisation discutables.
+                                </td>
+                                <td class="col-acquis">
+                                    Le schéma relationnel traduit de manière organisée le cahier des charges, en
+                                    limitant les redondances et en respectant les contraintes clés.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="self-eval-container">
+                        <div class="self-eval-title">🔍 Mon Auto-évaluation (BUT 2)</div>
+                        <p>Ma gestion des données est devenue professionnelle. Je conçois des bases robustes qui évitent
+                            la redondance et je sais extraire l'information pertinente pour la prise de décision. Les
+                            requêtes complexes ne me font plus peur.</p>
+
+                        <div class="self-eval-title mt-1-5">🔍 Projets & Contexte</div>
+                        <p><strong>Blog Dynamique :</strong> Développement d'une plateforme de blog utilisant une base
+                            de données relationnelle pour la gestion et l'affichage dynamique des articles.</p>
+                        <p class="mt-1"><strong>Découverte NoSQL (MongoDB) :</strong> Travaux Dirigés axés
+                            sur l'utilisation de bases de données orientées documents (NoSQL), offrant une alternative
+                            flexible aux modèles relationnels classiques.</p>
+                    </div>
+
+                    <div class="traces-gallery">
+                        <div class="trace-item"><img src="images/blogbdd.png" alt="Blog BDD">
+                            <div class="trace-caption">Base de Données Blog</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C5: Projet -->
+            <div class="competence-block">
+                <div class="comp-header">
+                    <div class="comp-icon">📅</div>
+                    <div>
+                        <h2>C5 : Conduire un projet</h2>
+                        <p class="text-muted">Besoins, Outils, Acteurs</p>
+                    </div>
+                </div>
+                <div class="comp-content">
+                    <table class="criteria-table">
+                        <thead>
+                            <tr>
+                                <th>Critères</th>
+                                <th>Non Acquis</th>
+                                <th>En Cours</th>
+                                <th>Acquis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-critere">AC 1 : Appréhender les besoins du client et de l’utilisateur
+                                </td>
+                                <td class="col-non-acquis">Le besoin est pris en compte de façon très partielle ;
+                                    certains enjeux ou contraintes importants ne sont pas identifiés.</td>
+                                <td class="col-en-cours">Les attentes principales sont comprises et reformulées, mais
+                                    certains aspects restent flous ou insuffisamment discutés.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Les besoins sont clarifiés avec le client et les utilisateurs, reformulés et
+                                    priorisés pour guider concrètement le projet.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 2 : Mettre en place les outils de gestion de projet</td>
+                                <td class="col-non-acquis">Les outils sont peu ou pas utilisés ; le suivi de
+                                    l’avancement reste informel et difficile à retracer.</td>
+                                <td class="col-en-cours active-level-progress">
+                                    <span class="level-badge badge-encours">En Cours</span><br>
+                                    Quelques outils sont mis en œuvre (planning, suivi des tâches, partage de
+                                    documents), mais leur usage n’est pas encore régulier.
+                                </td>
+                                <td class="col-acquis">Les outils choisis sont adaptés au projet et alimentés tout au
+                                    long du déroulement, permettant un suivi clair de l’avancement.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC 3 : Identifier les acteurs et les phases d’un cycle de
+                                    développement</td>
+                                <td class="col-non-acquis">Les intervenants et les étapes du projet sont confondus ou
+                                    mal situés, la progression du cycle est peu lisible.</td>
+                                <td class="col-en-cours">Les principaux acteurs et phases sont reconnus, mais certains
+                                    rôles ou enchaînements restent approximatifs.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Les acteurs sont clairement identifiés, les phases du cycle de développement sont
+                                    distinguées et reliées aux activités menées.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="self-eval-container">
+                        <div class="self-eval-title">🔍 Mon Auto-évaluation (BUT 2)</div>
+                        <p>Je maîtrise le cycle de vie d'un projet. Je sais dialoguer avec un client pour comprendre son
+                            vrai besoin (pas seulement ce qu'il dit vouloir) et utiliser les outils adaptés pour garder
+                            le cap et respecter les délais.</p>
+
+                        <div class="self-eval-title mt-1-5">🔍 Projets & Contexte</div>
+                        <p><strong>24h du Code (Chatbot Cali) :</strong> Participation au hackathon des 24h du code au
+                            Mans. Conception en équipe d'un Chatbot IA, nécessitant une organisation rigoureuse et une
+                            gestion du stress.</p>
+                        <p class="mt-1"><strong>Mission Alternance :</strong> Reprise et pilotage d'une
+                            application industrielle existante. Gestion des plannings, communication avec le personnel
+                            de l'entreprise et déplacements sur le terrain pour comprendre les besoins réels.</p>
+                    </div>
+
+                    <div class="traces-gallery">
+                        <div class="trace-item"><img src="images/cali.png" alt="Chatbot Cali">
+                            <div class="trace-caption">Projet Chatbot IA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C6: Collaborer -->
+            <div class="competence-block">
+                <div class="comp-header">
+                    <div class="comp-icon">🤝</div>
+                    <div>
+                        <h2>C6 : Collaborer</h2>
+                        <p class="text-muted">Écosystème, Intégration, Compte-rendu</p>
+                    </div>
+                </div>
+                <div class="comp-content">
+                    <table class="criteria-table">
+                        <thead>
+                            <tr>
+                                <th>Critères</th>
+                                <th>Non Acquis</th>
+                                <th>En Cours</th>
+                                <th>Acquis</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-critere">AC1 : Comprendre la diversité, la structure et la dimension de
+                                    l’informatique dans une organisation</td>
+                                <td class="col-non-acquis">La variété des structures et des métiers est peu perçue, la
+                                    place de l’informatique reste vague.</td>
+                                <td class="col-en-cours active-level-progress">
+                                    <span class="level-badge badge-encours">En Cours</span><br>
+                                    Les grandes formes d’organisation et quelques fonctions types sont identifiées, sans
+                                    vision globale très précise.
+                                </td>
+                                <td class="col-acquis">Les différents modes d’organisation et les principaux métiers
+                                    sont situés, avec une compréhension de leurs interactions.</td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC2 : Appliquer une démarche pour intégrer une équipe
+                                    informatique</td>
+                                <td class="col-non-acquis">La posture d’intégration est peu préparée ou peu adaptée.
+                                </td>
+                                <td class="col-en-cours">Une démarche d’intégration est amorcée, mais manque encore de
+                                    structure ou de continuité.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    Une démarche structurée est mise en œuvre pour comprendre le fonctionnement de
+                                    l’équipe et trouver progressivement sa place.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC3 : Mobiliser les compétences interpersonnelles pour intégrer
+                                    une équipe</td>
+                                <td class="col-non-acquis">La communication est irrégulière ; la coopération reste
+                                    limitée, les retours sont rarement sollicités.</td>
+                                <td class="col-en-cours">Les échanges sont présents et globalement respectueux, mais pas
+                                    toujours anticipés ou ajustés.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    La communication est constructive, à l’écoute des autres, et favorise la coopération
+                                    et la résolution collective de difficultés.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-critere">AC4 : Rendre compte de son activité professionnelle</td>
+                                <td class="col-non-acquis">Le travail réalisé est peu documenté ou communiqué ; les
+                                    autres ont du mal à comprendre l’avancement.</td>
+                                <td class="col-en-cours">Des comptes rendus sont fournis, mais de manière ponctuelle ou
+                                    partiellement détaillée.</td>
+                                <td class="col-acquis active-level">
+                                    <span class="level-badge badge-acquis">Niveau Atteint</span><br>
+                                    L’activité est partagée de manière régulière et structurée, facilitant le suivi par
+                                    l’équipe et le responsable.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="self-eval-container">
+                        <div class="self-eval-title">🔍 Mon Auto-évaluation (BUT 2)</div>
+                        <p>Je suis prêt à intégrer une entreprise. Je comprends les codes du monde professionnel, je
+                            sais communiquer sur mon avancement de manière claire et structurée, et m'intégrer
+                            efficacement dans une équipe existante.</p>
+
+                        <div class="self-eval-title mt-1-5">🔍 Projets & Contexte</div>
+                        <p><strong>Méthode Agile & Scrum :</strong> Application concrète des méthodes agiles dans mes
+                            projets de groupe. Utilisation de Sprint Backlogs pour répartir les tâches et assurer un
+                            suivi professionnel de l'avancement en équipe.</p>
+                    </div>
+
+                    <div class="traces-gallery">
+                        <div class="trace-item"><img src="images/sprintbacklog.png" alt="Sprint Backlog">
+                            <div class="trace-caption">Gestion Agile</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- Fin BUT 2 -->
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div>
+                <strong>Alexandre Tricot</strong><br>
+                <span>© 2025 • Tous droits réservés</span>
+            </div>
+            <div>
+                <a href="mailto:alexandre.tricot16@gmail.com" class="link-arrow"
+                    style="color: #d97706;">alexandre.tricot16@gmail.com</a>
+                <p style="color: #d97706;">06 51 59 58 24</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        function switchYear(yearId, event) {
+            document.querySelectorAll('.year-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(yearId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        // Lightbox Logic
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("img01");
+        const closeBtn = document.getElementsByClassName("close")[0];
+        const images = document.querySelectorAll('.trace-item img');
+
+        images.forEach(img => {
+            img.onclick = function () {
+                modal.style.display = "flex";
+                modal.style.alignItems = "center";
+                modal.style.justifyContent = "center";
+                modalImg.src = this.src;
+            }
+        });
+
+        closeBtn.onclick = function () { modal.style.display = "none"; }
+        modal.onclick = function (e) { if (e.target === modal) modal.style.display = "none"; }
+        document.addEventListener('keydown', function (e) { if (e.key === "Escape") modal.style.display = "none"; });
+    </script>
+</body>
+
+</html>
