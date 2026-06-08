@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Profil Professionnel - Alexandre Tricot</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* ========================================= */
+        /* COMPOSANTS INFOGRAPHIQUES SPECIFIQUES     */
+        /* ========================================= */
+        
+        .mission-section {
+            background: var(--bg-surface);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            margin-bottom: 4rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-number {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 8rem;
+            font-weight: 900;
+            color: rgba(217, 119, 6, 0.05); /* Accent color très transparent */
+            line-height: 1;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .mission-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- Infographie Type 1 : Flux TDD (Mission 1) --- */
+        .workflow-flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+            background: #fafaf9;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+        .workflow-step {
+            text-align: center;
+            flex: 1;
+            min-width: 120px;
+        }
+        .step-icon {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem auto;
+            box-shadow: var(--shadow-sm);
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+        }
+        .step-arrow {
+            color: #d6d3d1;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        /* --- Infographie Type 2 : Stack Pyramide (Mission 2) --- */
+        .stack-pyramid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+            background: #fffbeb;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px dashed #fde68a;
+        }
+        .stack-layer {
+            background: white;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            font-weight: 800;
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            border-left: 4px solid;
+            width: 100%;
+            max-width: 300px;
+        }
+        .layer-front { border-color: #3b82f6; color: #1d4ed8; }
+        .layer-back { border-color: #8b5cf6; color: #4338ca; width: 85%; }
+        .layer-data { border-color: #10b981; color: #047857; width: 70%; }
+
+        /* --- Infographie Type 3 : Cycle Support (Mission 3) --- */
+        .cycle-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            background: #f0fdf4;
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #bbf7d0;
+        }
+        .cycle-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+        }
+        .cycle-box.highlight {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        /* --- Preuves & Arguments --- */
+        .arg-preuve-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .arg-box h4, .preuve-box h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .arg-box ul, .preuve-box ul {
+            list-style: none;
+            padding: 0;
+        }
+        .arg-box li, .preuve-box li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+        .arg-box li::before {
+            content: "💡";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .preuve-box li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        @media (max-width: 768px) {
+            .arg-preuve-grid { grid-template-columns: 1fr; }
+            .step-arrow { display: none; }
+            .workflow-step { margin-bottom: 1.5rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Alexandre <span class="gradient-text">Tricot</span></div>
+            <nav class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="competences.html">Compétences</a>
+                <a href="culture.html">Culture</a>
+                <a href="stage.html">Stage</a>
+                <a href="profil.html" class="active">Profil Pro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="text-center pt-4 pb-3">
+            <h1 class="section-title">Projection sur le <span class="gradient-text">Marché du Travail</span></h1>
+            <p class="text-muted max-w-800 mx-auto text-lg font-semibold">
+                À l'issue de ce Semestre 4, mon portefeuille de compétences me permet de me positionner de manière crédible sur 3 missions professionnelles distinctes. Voici mon profil technique, argumenté et prouvé.
+            </p>
+        </section>
+
+        <!-- MISSION 1 -->
+        <section class="mission-section">
+            <div class="mission-number">01</div>
+            <div class="mission-content">
+                <h2 class="text-3xl mb-1 text-accent">Développeur Concepteur Logiciel (Backend)</h2>
+                <p class="text-muted mb-3">Conception architecturale, algorithmique complexe et développement d'applications robustes, principalement en écosystème Java/Kotlin.</p>
+
+                <!-- Infographie Mission 1 -->
+                <div class="workflow-flex">
+                    <div class="workflow-step">
+                        <div class="step-icon">📊</div>
+                        <strong>Analyse & UML</strong>
+                        <div class="text-xs text-muted mt-0-5">Modélisation objet (C1)</div>
+                    </div>
+                    <div class="step-arrow">➔</div>
+                    <div class="workflow-step">
+                        <div class="step-icon">🧪</div>
+                        <strong>T.D.D.</strong>
+                        <div class="text-xs text-muted mt-0-5">Test Driven Dev (C1/C5)</div>
+                    </div>
+                    <div class="step-arrow">➔</div>
+                    <div class="workflow-step">
+                        <div class="step-icon">💻</div>
+                        <strong>Code & Algo</strong>
+                        <div class="text-xs text-muted mt-0-5">Java / Kotlin (C2)</div>
+                    </div>
+                </div>
+
+                <div class="arg-preuve-grid">
+                    <div class="arg-box">
+                        <h4 class="text-accent">Mes Arguments</h4>
+                        <ul>
+                            <li><strong>Logique Objet poussée :</strong> Je ne me contente pas de coder, je structure. Je maîtrise l'héritage, le polymorphisme et les Design Patterns pour rendre le code évolutif.</li>
+                            <li><strong>Fiabilité par les tests :</strong> J'intègre la rédaction de tests unitaires avant même l'écriture des fonctionnalités (méthodologie TDD).</li>
+                            <li><strong>Optimisation :</strong> Capacité à choisir les bonnes structures de données et à évaluer la complexité algorithmique d'une solution.</li>
+                        </ul>
+                    </div>
+                    <div class="preuve-box">
+                        <h4 style="color: #166534;">Mes Preuves</h4>
+                        <ul>
+                            <li><strong>Projet PotterBook :</strong> Validation complète de la démarche TDD en Java (Tests écrits avant le code).</li>
+                            <li><strong>Shooter Android :</strong> Développement complet d'un jeu vidéo mobile en Kotlin, nécessitant une architecture objet stricte pour la boucle de jeu et les collisions.</li>
+                            <li><strong>Design Patterns :</strong> Implémentation réussie du modèle MVC et d'autres patrons de conception (ex: TP Canards).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSION 2 -->
+        <section class="mission-section">
+            <div class="mission-number">02</div>
+            <div class="mission-content">
+                <h2 class="text-3xl mb-1 text-accent">Développeur Web Full-Stack</h2>
+                <p class="text-muted mb-3">Développement de plateformes dynamiques interconnectées, de la conception de la base de données relationnelle jusqu'au rendu interactif.</p>
+
+                <!-- Infographie Mission 2 -->
+                <div class="stack-pyramid">
+                    <div class="text-xs text-muted mb-0-5 font-bold uppercase">Architecture Maîtrisée</div>
+                    <div class="stack-layer layer-front">
+                        <span class="text-xl mr-0-5">🎨</span> Rendu & UI (Three.js / JavaFX)
+                    </div>
+                    <div class="text-2xl text-muted">↕</div>
+                    <div class="stack-layer layer-back">
+                        <span class="text-xl mr-0-5">⚙️</span> Logique Métier (PHP Symfony)
+                    </div>
+                    <div class="text-2xl text-muted">↕</div>
+                    <div class="stack-layer layer-data">
+                        <span class="text-xl mr-0-5">🗄️</span> Persistance (SQL / MongoDB)
+                    </div>
+                </div>
+
+                <div class="arg-preuve-grid">
+                    <div class="arg-box">
+                        <h4 class="text-accent">Mes Arguments</h4>
+                        <ul>
+                            <li><strong>Conception de BDD :</strong> Création de schémas relationnels normalisés évitant la redondance, et écriture de requêtes complexes.</li>
+                            <li><strong>Approche Agile :</strong> Capacité à livrer des fonctionnalités par itérations (Sprints) en respectant un Backlog partagé.</li>
+                            <li><strong>Ouverture technologique :</strong> Curiosité technique me permettant d'intégrer des librairies spécifiques comme les moteurs de rendu 3D dans un environnement web.</li>
+                        </ul>
+                    </div>
+                    <div class="preuve-box">
+                        <h4 style="color: #166534;">Mes Preuves</h4>
+                        <ul>
+                            <li><strong>Site Web de Mairie :</strong> Projet d'envergure mené de A à Z en équipe, en appliquant les méthodes Agile et Scrum (C5/C6).</li>
+                            <li><strong>Projet Musicode :</strong> Développement PHP complet démontrant ma capacité à relier un backend solide à une interface utilisateur fluide.</li>
+                            <li><strong>Visualisation 3D :</strong> Travaux et recherches personnels continus sur l'intégration de WebGL/Three.js dans le navigateur.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSION 3 -->
+        <section class="mission-section" style="margin-bottom: 0;">
+            <div class="mission-number">03</div>
+            <div class="mission-content">
+                <h2 class="text-3xl mb-1 text-accent">Support Applicatif & Maintenance</h2>
+                <p class="text-muted mb-3">Compréhension des environnements de production, maintien en conditions opérationnelles, et interface entre la technique et les métiers.</p>
+
+                <!-- Infographie Mission 3 -->
+                <div class="cycle-grid">
+                    <div class="cycle-box">
+                        <div class="text-3xl mb-0-5">📡</div>
+                        <strong class="text-sm">Détection & Écoute</strong>
+                        <div class="text-xs text-muted">Réception des besoins métiers</div>
+                    </div>
+                    <div class="cycle-box">
+                        <div class="text-3xl mb-0-5">🔍</div>
+                        <strong class="text-sm">Analyse & Diag.</strong>
+                        <div class="text-xs text-muted">Identification de la source (C3)</div>
+                    </div>
+                    <div class="cycle-box highlight">
+                        <div class="text-3xl mb-0-5">🛠️</div>
+                        <strong class="text-sm">Résolution</strong>
+                        <div class="text-xs opacity-90">Correction & Patch</div>
+                    </div>
+                    <div class="cycle-box">
+                        <div class="text-3xl mb-0-5">📝</div>
+                        <strong class="text-sm">Documentation</strong>
+                        <div class="text-xs text-muted">Capitalisation du savoir (C6)</div>
+                    </div>
+                </div>
+
+                <div class="arg-preuve-grid">
+                    <div class="arg-box">
+                        <h4 class="text-accent">Mes Arguments</h4>
+                        <ul>
+                            <li><strong>Expérience industrielle réelle :</strong> Je connais les exigences de sécurité et de continuité de service d'un grand groupe.</li>
+                            <li><strong>Administration Système :</strong> Maîtrise des environnements Linux, Docker, et de la configuration de réseaux locaux d'entreprise.</li>
+                            <li><strong>Communication professionnelle :</strong> Capacité à traduire un problème technique en termes compréhensibles pour les utilisateurs, et à rédiger des procédures.</li>
+                        </ul>
+                    </div>
+                    <div class="preuve-box">
+                        <h4 style="color: #166534;">Mes Preuves</h4>
+                        <ul>
+                            <li><strong>Alternance Valeo (1 an) :</strong> Service support applicatif au sein d'une usine automobile. Résolution de problèmes en direct sur le terrain.</li>
+                            <li><strong>Certification Écri+ (720 pts) :</strong> Preuve de ma capacité à produire des communications écrites professionnelles, structurées et sans fautes.</li>
+                            <li><strong>Infrastructures sécurisées :</strong> TP Serveur sécurisé (Iptables) et déploiement de multi-services via Docker démontrant mon aisance en administration (C3).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-4">
+        <div class="container footer-content">
+            <div>
+                <strong>Alexandre Tricot</strong><br>
+                <span>© 2026 • Tous droits réservés</span>
+            </div>
+            <div>
+                <a href="mailto:alexandre.tricot16@gmail.com" class="link-arrow text-accent">alexandre.tricot16@gmail.com</a>
+                <p class="text-accent">06 51 59 58 24</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
